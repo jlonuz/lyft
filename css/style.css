@@ -17,14 +17,19 @@
 }
 
 .btn {
-	min-width: 100%;
+	
 	background-color: transparent;
 	margin-top: 300px;
 	border-radius: 5px;
-	border: 1px solid white;
+	border: 1px solid #E500A7;
 	color:white;
+	font-family: 'Indie Flower';
 }
+.btn-index {
+	min-width: 100%;
+	letter-spacing: 3px;
 
+}
 .btn:hover {
 	background-color: #E500A7;
 	color:white;
@@ -32,18 +37,22 @@
 
 /* Aquí empiezan los estilos de inicio-sesion */
 
-.fondo-textura {
+/*.fondo-textura {
 	background-image: url(../img/textura.jpg);
-}
+}*/
 
 h3 {
-	font-family: 'Coiny';
-	color:white;
-	text-shadow:2px 2px black;
+	font-family: 'Indie Flower', cursive;
+	color:black;
+	text-shadow:1px 1px #E500A7;
 }
 
 h6 {
-	margin-bottom: 30px;
+	padding-bottom: 25px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	border-bottom: 1px solid #D6D9E1;
+	margin-bottom: 35px;
 }
 
 .fa {
@@ -52,25 +61,109 @@ h6 {
 }
 
 .margen {
-	margin-right: 30px;
-	margin-left: 30px;
+	margin-right: 20px;
+	margin-left: 20px;
 }
 
+
+.form-inline {
+	margin-top: 20px;
+}
 .fa-arrow-circle-left {
 	color:black;
 }
 
 .fa-arrow-circle-left:hover {
-	color:white;
+	color:#E11680;
 }
 
-.btn-next {
-	margin-top: 150px;
-	width:200px;
+.btn-next  {
+	background-color: #D2149D;
+	margin-top: 100px;
 	border-radius: 5px;
-	border: 1px solid white;
+	border: 1px solid black;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-family: 'Indie Flower', cursive;
+	letter-spacing: 3px;
+	margin-left: 
+}
+
+.btn-next:hover {
+	background-color: #3093E1;
 }
 
 .chile {
 	width:20px;
+}
+
+.frase {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	margin-top: 35px;
+	background-color: #D2149D;
+	color:white;
+	padding:15px;
+	border-radius:10px;
+	border:1px solid black;
+
+}
+
+
+/*Aquí empiezan los estilos de piases.html*/
+
+
+.fondo-paises {
+	/*background-color:  #D2149D;*/
+	border-radius: 10px;
+}
+.title1 {
+	/*font-family: 'Indie Flower', cursive;*/
+	font-family: 'Josefin Sans', sans-serif;
+	color:black;
+
+
+}
+.title2 {
+	text-shadow:none;
+	color:black;
+	font-family: 'Josefin Sans', sans-serif;
+	/*font-family: 'Open Sans Condensed', sans-serif;*/
+	padding:10px;
+}
+
+ul li {
+	list-style: none;
+	padding:5px;
+	border-bottom: 1px solid #D6D9E1;
+}
+ul li a {
+	color:black;
+}
+ul li a:hover {
+	text-decoration: none;
+	color:#2F71D2;
+}
+ul li img {
+	margin-right: 30px;
+}
+
+ul li span {
+	font-size: 15px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*Aquí empiezan los estilos de login*/
+
+
+.color {
+	color:#348FE1;
+}
+
+.input {
+	max-width: 300px;
+	margin:0 auto;
+	
+
 }
