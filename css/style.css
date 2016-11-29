@@ -35,7 +35,7 @@
 	color:white;
 }
 
-/* Aquí empiezan los estilos de inicio-sesion */
+/* Aquí empiezan los estilos de sign-up */
 
 /*.fondo-textura {
 	background-image: url(../img/textura.jpg);
@@ -52,7 +52,7 @@ h6 {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 20px;
 	border-bottom: 1px solid #D6D9E1;
-	margin-bottom: 35px;
+	margin-bottom: 20px;
 }
 
 .fa {
@@ -96,21 +96,62 @@ h6 {
 .chile {
 	width:20px;
 }
-
+.span {
+	display:inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.borde-input {
+	border:1px solid #E0E0E0;
+	border-right: none;
+} 
+.input {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.espacio {
+	padding:0;
+}
 .frase {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 20px;
-	margin-top: 35px;
+	margin-top: 20px;
 	background-color: #D2149D;
 	color:white;
 	padding:15px;
+	margin-bottom: 50px;
 	border-radius:10px;
 	border:1px solid black;
+}
+
+.get-code {
+	text-decoration: none;
+	color:black;
+	border:1px solid #E0E0E0;
+	border-radius: 5px;
+	padding:10px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	box-shadow: 1px 1px #D2149D;
+}
+
+.get-code:hover {
+	text-decoration: none;
+	color:#D2149D;
+	border:1px solid #D2149D;
+}
+
+#mostrarCodigo {
+	background-color: black;
+	margin-top: 50px;
+	color:white;
+	margin-left: 80px;
+	margin-right: 80px;
 
 }
 
 
-/*Aquí empiezan los estilos de piases.html*/
+/*Aquí empiezan los estilos de paises.html*/
 
 
 .fondo-paises {
@@ -153,6 +194,20 @@ ul li span {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+/*Aqui están los estilos de código.html */
+
+#try {
+	border:1px solid black;
+	border-radius: 10px;
+	margin-top: 20px;
+	padding:10px;
+	background-color: #E0E0E0;
+	color:#D2149D;
+}
+#try a {
+	color:#E02D9F;
+	text-decoration: none;
+}
 
 /*Aquí empiezan los estilos de login*/
 

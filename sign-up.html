@@ -41,33 +41,35 @@
 		    					</a>
 		    					<span class="caret"></span>
 		    				</div>
-		    				
-		   		  			<input type="text" id="codigo_area" class="form-control" placeholder="Ingrese digitos" value="+56 9">
-								
+		    				<div class="col-xs-3 col-ms-12 col-md-12 borde-input">
+		    					<span class="span" id="codigo_area">+569</span>
+		    				</div>
+		    				<div class="col-xs-8 col-sm-8 col-md-8 espacio">
+		    					<input type="tel" id="phone" class="form-control input" placeholder="Ingrese digitos">
+		    				</div>
 		   		  		</div>
 		  			</div>
 		  			<div class="row">
 		  				<div class="col-xs-12 col-sm-12 col-md-12 frase">
-		  					<p class="text-center">We'll send a text to verify your phone</p>
+		  					<p class="text-center">We'll send a code to verify your phone</p>
+		  					
+		  				</div>
+		  				<div class="text-center">
+		  					<a class="get-code" id="get-code" href="codigo.html">Get my code</a>
 		  				</div>
 		  			</div>
-		  			<div class="row">
+		  <!--Aquí aparecerá mi cógigo-->
+		  			<div class="col-offset-4 text-center" id="mostrarCodigo">
+
+		  			</div>
+		  			<div id="mostrarNext" class="row">
 		  				<div class="col-xs-12 col-sm-12 col-md-12 text-center">
-		  					<a href="login.html" type="submit" class="btn btn-primary btn-next">Next</a>
+		  					<a href="codigo.html" type="submit" class="btn btn-primary btn-next">Next</a>
 		  				</div>
 		  			</div>
-					
- 				</form>
+				</form>
 			</div>
 		</div>
-
-
-
-
-
-
-
-	
 	</section>
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
