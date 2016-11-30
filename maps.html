@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="img/lyft.ico">
 	<title>maps</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
@@ -14,18 +16,37 @@
 <body>
 	<section>
 		<div class="col-xs-4">
-				<a href="sign-up.html"><i class="fa fa-arrow-circle-left pull-left" aria-hidden="true"></i>
+				<a href="login.html"><i class="fa fa-arrow-circle-left pull-left" aria-hidden="true"></i>
 				</a>
 			</div>
 		<div class="row">
 			<div class="col-xs-12 col-ms-12 col-md-12 text-center">
 				<h1 class="title">Lyft</h1>
 				<h6>Aqui tiene que aparecer el mapa y ser funtional</h6>
+				<h3>Puse los scripts del API de google maps, obtuve mi clave para usarla, pero NADA... lo intenté, pero por fin se acabó lyft.</h3>
 			</div>
 		</div>
 	</section>
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/login.js"></script>
+	
+	<script src="http://maps.google.com/maps/api/js?key=AIzaSyCkCQNFNYMEseaH-ZO5oyVA0tkZY4VgFzg&callback=iniciar"></script>
+	<script>
+            navigator.geolocation.getCurrentPosition(iniciar);
+             function iniciar(position){
+                var mapOptions = {
+                // center: new google.maps.LatLng(-33.41921,-70.6418611),
+                center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+                zoom: 16,
+                mapTypeId: google.maps.MapTypeId.ROADMAP};
+                var map = new google.maps.Map(document.getElementById("map"),mapOptions);
+                var marker2 = new google.maps.Marker({
+                    position: map.getCenter()
+                    , title: 'You are Here'
+                    , map: map
+                , });
+            };
+        </script>
+    
 </body>
 </html>
